@@ -1,0 +1,22 @@
+# Agent instructions: local-only, not part of the published repository.
+CLAUDE.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# uv
+.venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Spike output: throwaway probes, screenshots and settings.json copies.
+# The scripts themselves are tracked; whatever they produce is not.
+spike/out/

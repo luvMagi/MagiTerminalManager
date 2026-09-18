@@ -1,0 +1,12 @@
+# Normalise line endings in the repository to LF regardless of checkout platform.
+# This project is about reproducing a setup on a second machine; line endings
+# drifting between clones is exactly the kind of noise that gets in the way.
+* text=auto eol=lf
+
+# Generated .ps1 artifacts are written by the tool at runtime, not stored here,
+# but any checked-in PowerShell sample stays LF for the same reason.
+*.ps1 text eol=lf
+
+*.png binary
+*.ico binary
+*.lnk binary
